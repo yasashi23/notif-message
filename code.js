@@ -59,3 +59,7 @@ async function notif(skillCome,il,judul,reqBody){
 
 
 }
+
+app.listen(3000,()=>{
+    console.log("berjalan")
+})
