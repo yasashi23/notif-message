@@ -10,6 +10,10 @@ app.use(cors())
 app.use(bodyParser.json());
 
 
+app.get("/",(req,res)=>{
+    res.send("ok nih")
+})
+
 
 app.post("/message",(req,res)=>{
     res.send({success: 'kamu berhasil hore'})
