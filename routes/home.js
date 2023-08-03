@@ -14,11 +14,11 @@ router.get("/",(req,res)=>{
     })
 })
 
-router.post("/message",(req,res)=>{
+router.post("/message",async (req,res)=>{
     const dataFromUpw = req.body
     console.log(dataFromUpw)
 
-    notif(dataFromUpw.title,`Desk:\n${dataFromUpw.deskripsi}\n\nSkills:\n${dataFromUpw.keahlian}`,"http://google.com")
+    const gg = await notif(dataFromUpw.title,`Desk:\n${dataFromUpw.deskripsi}\n\nSkills:\n${dataFromUpw.keahlian}`,"http://google.com")
 
 
     return res.send({success: 'kamu berhasil hore'})
