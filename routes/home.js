@@ -14,7 +14,7 @@ router.get("/",(req,res)=>{
 })
 
 router.post("/message",(req,res)=>{
-    res.send({status:200,success: 'kamu berhasil hore'})
+    return res.send({status:200,success: 'kamu berhasil hore'})
 
 
 })
