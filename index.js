@@ -6,7 +6,7 @@ const home = require("./routes/home")
 app.use(cors())
 app.use(bodyParser.json());
 
-app.use("/home",home)
+app.use("/routes/home",home)
 
 
 
