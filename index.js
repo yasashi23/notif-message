@@ -1,6 +1,7 @@
 const express =require('express')
 const app = express()
-
+const cors = require('cors')
+const bodyParser = require('body-parser')
 const home = require("./routes/home")
 
 app.use(cors())

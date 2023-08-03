@@ -1,10 +1,11 @@
 const express =require('express')
 const router = express.Router()
-const cors = require('cors')
-const bodyParser = require('body-parser')
+
 const axios = require('axios')
 const a20 = 'k-dfcac4ac5add'
 const a71 = 'k-15528d2b9b65'
+
+
 
 router.get("/",(req,res)=>{
     res.json({
