@@ -8,12 +8,13 @@ const a71 = 'k-15528d2b9b65'
 
 router.get("/",(req,res)=>{
     res.json({
+        status:200,
         ini:"benar"
     })
 })
 
 router.post("/message",(req,res)=>{
-    res.send({success: 'kamu berhasil hore'})
+    res.send({status:200,success: 'kamu berhasil hore'})
 
 
 })
